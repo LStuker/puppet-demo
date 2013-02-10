@@ -8,6 +8,7 @@
 #class { 'vagrant': stage => 'pre' }
 
 class { 'puppet':}
+
 #class { 'hosts':
 #  $hosts => { puppet => '33.33.33.10',}
 #}
@@ -16,6 +17,7 @@ class { 'puppet':}
 
 if $hostname == 'puppet' {
   class { 'puppet::server': }
+  class { 'git':}
   host { 'www-centos':
           ip           => '33.33.33.11',
           host_aliases => [ 'www-centos.dev.inwork.ch','www-centos' ],

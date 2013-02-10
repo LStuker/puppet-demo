@@ -7,3 +7,6 @@
 [submodule "provision/modules/stdlib"]
 	path = provision/modules/stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "provision/modules/git"]
+	path = provision/modules/git
+	url = https://github.com/LStuker/puppet-git
